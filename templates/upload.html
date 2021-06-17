@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+          rel="stylesheet">
+		  
+	<style>
+	body            { font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;background-color:black,color:white !important;}
+a, h1, h2       { color: #377ba8; }
+h1, h2          { margin: 0; }
+h1              { border-bottom: 2px solid #eee; }
+h2              { font-size: 1.2em; }
+
+table.dataframe, .dataframe th, .dataframe td {
+  border: none;
+  border-bottom: 1px solid #C8C8C8;
+  border-collapse: collapse;
+  text-align:left;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 0.9em;
+}
+
+.data th {
+    background-color:#FFD700 ;
+    color: white;
+}
+
+
+
+tr:nth-child(odd)		{ background-color:#eee; }
+tr:nth-child(even)	{ background-color:#fff; }
+
+tr:hover            { background-color: #ffff99;}
+		</style>
+  </head>
+ 
+
+
+ <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted center" >GENERATED SUMMARIES</h3>
+      </div>
+      <hr/>
+	  
+      {% for table in tables %}
+            
+            {{ table|safe }}
+{% endfor %}
+	
+      
+      <hr/>    
+
+      </div>
+    </div>
+  </body>
+</html>
+ 

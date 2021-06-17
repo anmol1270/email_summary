@@ -1,0 +1,10 @@
+flask
+bert-extractive-summarizer
+pandas
+sentencepiece
+transformers
+spacy
+gunicorn
+torchvision
+click==7.1.2
+
