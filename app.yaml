@@ -1,7 +1,0 @@
-runtime: python
-env: flex
-entrypoint: gunicorn --workers=1 -threads 1 -b :$PORT main:app --timeout 100
-
-runtime_config:
-  # You can also specify 2 for Python 2.7
-  python_version: 3
